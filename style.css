@@ -53,14 +53,16 @@ body {
   line-height: 58px;
   letter-spacing: -0.03em;
   text-align: left;
+  width: 45%;
 }
 
-.about__me textarea {
+.about__me p {
   color: var(--main-gray);
   font-family: DM Sans;
   font-size: 32px;
   font-weight: 400;
   text-align: start;
+  width: 55%;
 
   background-color: transparent;
   border: none;
@@ -68,7 +70,8 @@ body {
 }
 .about__me {
   display: flex;
- 
+  display: flex;
+  margin-bottom: 7.0625rem;
 }
 .about {
   display: flex;
@@ -83,8 +86,8 @@ body {
   text-decoration: none;
   color: var(--main-black);
 }
-.about__section{
-    line-height: 80px;
+.about__section {
+  width: 45%;
 }
 .about__section h2 {
   font-family: Inter;
@@ -94,6 +97,7 @@ body {
   letter-spacing: -0.03em;
   text-align: left;
   text-transform: capitalize;
+  margin-bottom: 30px;
 }
 .about__section p {
   font-family: Inter;
@@ -102,6 +106,14 @@ body {
   line-height: 22px;
   letter-spacing: -0.03em;
   text-align: left;
+}
+.about__section span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+}
+.about__intro {
+  max-width: 356px;
 }
 .about__section input {
   background-color: transparent;
@@ -136,7 +148,7 @@ body {
 }
 .my__image {
   height: 364.6781311035156px;
-  width: 640px;
+  width: 55%;
   left: 480px;
   top: 0px;
   border-radius: 0px;
