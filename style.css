@@ -15,27 +15,32 @@
 body {
   background: var(--bg-color);
 }
-.wrapper__card {
-  background: var(--main-white);
+.wrapper {
   max-width: 1120px;
+  background: var(--main-white);
   margin: 0 auto;
   padding: 102px 160px 108px 160px;
 }
-.navigation__bar {
+.navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
 }
-.navigation__bar span {
+.navigation span {
   flex: 1;
-  text-transform: uppercase;
-  color: var(--main-gray);
+  font-family: DM Sans;
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
-.navigation__bar ul {
+.navigation ul {
   display: flex;
   flex: 1;
   justify-content: space-between;
   list-style: none;
-  text-transform: uppercase;
+}
+.navigation ul li {
   font-family: DM Sans;
   font-size: 21px;
   font-weight: 500;
@@ -43,116 +48,95 @@ body {
   letter-spacing: -0.03em;
   text-align: left;
 }
-.main__section {
-  margin-top: 223px;
-}
-.main__section h1 {
+.about__me h1 {
   font-family: DM Sans;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 500;
   line-height: 58px;
-  letter-spacing: -0.03em;
-  text-align: left;
-  width: 45%;
+  width: 35%;
 }
-
 .about__me p {
-  color: var(--main-gray);
   font-family: DM Sans;
   font-size: 32px;
   font-weight: 400;
-  text-align: start;
-  width: 55%;
-
-  background-color: transparent;
-  border: none;
-  outline: none;
+  line-height: 37px;
+  width: 65%;
 }
 .about__me {
   display: flex;
-  display: flex;
-  margin-bottom: 7.0625rem;
+  margin-top: 113px;
+  gap: 60px;
 }
-.about {
+.about__work {
   display: flex;
+  margin-top: 113px;
+  border-bottom: 1.5px solid var(--main-gray);
 }
-.about__section a {
+.about__project h2 {
   font-family: Inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: -0.03em;
   text-align: left;
-  text-decoration: none;
-  color: var(--main-black);
+  margin-bottom: 19px;
 }
-.about__section {
-  width: 45%;
-}
-.about__section h2 {
+.about__project__info p {
   font-family: Inter;
   font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: -0.03em;
-  text-align: left;
-  text-transform: capitalize;
+  font-weight: 400;
   margin-bottom: 30px;
+  line-height: 22px;
 }
-.about__section p {
+.about__project__info {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 60px;
+  width: 380px;
+  padding-right: 50px;
+}
+.about__project a {
   font-family: Inter;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
-.about__section span {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-}
-.about__intro {
-  max-width: 356px;
-}
-.about__section input {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: var(--main-gray);
-  font-family: Inter;
-  width: 100%;
-  height: 35px;
-  width: 315.3398132324219px;
-  left: 0px;
-  top: 145px;
-  width: 356px;
-  left: 0px;
-  top: 44px;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
-.about__section input::placeholder {
-  color: var(--main-gray);
-  font-family: Inter;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: -0.03em;
-  text-align: left;
+  font-weight: 500;
+  color: var(--main-black);
 }
 .my__image {
   height: 364.6781311035156px;
-  width: 55%;
+  width: 640px;
   left: 480px;
   top: 0px;
   border-radius: 0px;
 }
 .my__image img {
   width: 100%;
+}
+.footer__logo {
+  color: var(--secondary);
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  flex: 1;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.footer ul {
+  display: flex;
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 500;
+  list-style: none;
+  flex: 1;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  justify-content: space-between;
 }
