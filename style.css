@@ -13,13 +13,13 @@
   --bg-color: #e5e5e5;
 }
 body {
-  background: var(--bg-color);
+  background: #e5e5e5;
 }
 .wrapper {
   max-width: 1120px;
-  background: var(--main-white);
   margin: 0 auto;
-  padding: 102px 160px 108px 160px;
+  /* padding: 102px 160px 108px 160px; */
+  padding-top: 102px;
 }
 .navigation {
   display: flex;
@@ -65,12 +65,17 @@ body {
 .about__me {
   display: flex;
   margin-top: 113px;
-  gap: 60px;
+  text-align: start;
 }
 .about__work {
   display: flex;
+  justify-content: space-between;
   margin-top: 113px;
   border-bottom: 1.5px solid var(--main-gray);
+  overflow: hidden;
+}
+.about__project {
+  text-align: left;
 }
 .about__project h2 {
   font-family: Inter;
@@ -104,11 +109,7 @@ body {
   color: var(--main-black);
 }
 .my__image {
-  height: 364.6781311035156px;
-  width: 640px;
-  left: 480px;
-  top: 0px;
-  border-radius: 0px;
+  max-width: 640px;
 }
 .my__image img {
   width: 100%;
@@ -126,7 +127,7 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 200px;
 }
 .footer ul {
   display: flex;
@@ -139,4 +140,84 @@ body {
   letter-spacing: -0.03em;
   text-align: left;
   justify-content: space-between;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wrapper {
+    max-width: 90vw;
+  }
+  .footer {
+    margin: 50px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    padding: 27px;
+  }
+  .about__me p {
+    font-size: 27px;
+    width: 55%;
+  }
+  .about__me h1 {
+    width: 45%;
+    font-size: 54px;
+  }
+  .navigation span {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 30px;
+  }
+  .about__me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about__me h1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .about__me p {
+    width: 100%;
+  }
+  .navigation {
+    flex-direction: column;
+  }
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .navigation ul li {
+    line-height: 60px;
+  }
+
+  .about__project h2 {
+    font-size: 30px;
+  }
+  .about__project__info p {
+    font-size: 22px;
+  }
+  .about__project__info {
+    font-size: 18px;
+  }
+  .about__project a {
+    font-size: 22px;
+  }
+  .footer {
+    display: block;
+    margin-top: 70px;
+  }.footer__logo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .about__work{
+    display: block;
+    margin: 50px 0;
+  }
+  .my__image{
+    margin-top: 40px;
+  }
 }
