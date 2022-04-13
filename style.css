@@ -181,6 +181,7 @@ body {
   }
   .about__me p {
     width: 100%;
+    text-align: justify;
   }
   .navigation {
     flex-direction: column;
@@ -199,14 +200,23 @@ body {
   }
   .about__project__info p {
     font-size: 22px;
+    line-height: 26px;
   }
   .about__project__info {
     font-size: 18px;
+    width: 100%;
+    padding: 0;
+
+  }.about__project__info span{
+    line-height: 26px;
   }
+  /* .about__project{
+    text-align: center;
+  } */
   .about__project a {
-    font-size: 22px;
+    font-size: 18px;
   }
-  .footer {
+   .footer {
     display: block;
     margin-top: 70px;
   }.footer__logo {
