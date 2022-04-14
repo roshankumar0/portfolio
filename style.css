@@ -12,8 +12,16 @@
   --secondary: #2429af;
   --bg-color: #e5e5e5;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #e5e5e5;
+}
+a {
+  text-decoration: none;
+  color: var(--main-black);
+  cursor: pointer;
 }
 .wrapper {
   max-width: 1120px;
@@ -37,8 +45,9 @@ body {
 .navigation ul {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style: none;
+  gap: 2rem;
 }
 .navigation ul li {
   font-family: DM Sans;
@@ -73,6 +82,7 @@ body {
   margin-top: 113px;
   border-bottom: 1.5px solid var(--main-gray);
   overflow: hidden;
+  padding-bottom: 24px;
 }
 .about__project {
   text-align: left;
@@ -127,7 +137,7 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 200px;
+  margin: 70px;
 }
 .footer ul {
   display: flex;
@@ -140,6 +150,108 @@ body {
   letter-spacing: -0.03em;
   text-align: left;
   justify-content: space-between;
+}
+.contact {
+  font-family: DM Sans;
+  margin: 50px auto;
+  background: gainsboro;
+  max-width: 60vw;
+  box-shadow: 7px 15px 24px;
+  border-radius: 8px;
+  padding: 40px;
+}
+.contact__details {
+  text-align: center;
+}
+.contact h2 {
+  font-size: 22px;
+  font-family: DM Sans;
+  font-weight: normal;
+}
+.contact input {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  margin: 20px;
+}
+.contact textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: DM Sans;
+  font-weight: 500;
+}
+.contact input::placeholder {
+  font-family: DM Sans;
+}
+.submit {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: var(--secondary);
+  cursor: pointer;
+  color: wheat;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  border-radius: 50px;
+  border: 0.4px solid var(--main-gray);
+  outline: none;
+  transition: all 0.4s ease;
+}
+.submit:hover {
+  background-color: transparent;
+  color: var(--secondary);
+}
+.me__info h1 {
+  font-family: DM Sans;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.me__info p{
+font-family: DM Sans;
+font-size: 32px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+.about__skill h2{
+  font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: left;
+}
+.about__skill span{
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+.mail{
+font-family: DM Sans;
+font-size: 32px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: -0.03em;
+text-align: left;
+
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .wrapper {
@@ -201,13 +313,14 @@ body {
   .about__project__info p {
     font-size: 22px;
     line-height: 26px;
+    text-align: justify;
   }
   .about__project__info {
     font-size: 18px;
     width: 100%;
     padding: 0;
-
-  }.about__project__info span{
+  }
+  .about__project__info span {
     line-height: 26px;
   }
   /* .about__project{
@@ -216,18 +329,37 @@ body {
   .about__project a {
     font-size: 18px;
   }
-   .footer {
+  .footer {
     display: block;
     margin-top: 70px;
-  }.footer__logo {
+  }
+  .footer__logo {
     text-align: center;
     margin-bottom: 40px;
   }
-  .about__work{
+  .about__work {
     display: block;
     margin: 50px 0;
   }
-  .my__image{
+  .my__image {
     margin-top: 40px;
+    width: 100%;
+  }
+  .contact input {
+    width: 100%;
+    margin: 20px 0;
+    padding: 14px;
+    font-family: DM Sans;
+  }
+  .contact {
+    max-width: 100%;
+  }
+  .submit {
+    width: 100%;
+  }
+  .footer ul {
+    display: block;
+    text-align: center;
+    line-height: 50px;
   }
 }
