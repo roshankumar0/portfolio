@@ -32,8 +32,7 @@ a {
 .wrapper {
   max-width: 1120px;
   margin: 0 auto;
-  /* padding: 102px 160px 108px 160px; */
-  padding-top: 102px;
+  padding-top: 40px;
 }
 
 .navigation {
@@ -181,7 +180,7 @@ a {
   margin: 50px auto;
   background: gainsboro;
   max-width: 60vw;
-  box-shadow: 7px 15px 24px;
+  /* box-shadow: 7px 15px 24px; */
   border-radius: 8px;
   padding: 40px;
 }
@@ -280,7 +279,7 @@ a {
 }
 
 .about__skill {
-  margin-top: 92px;
+  margin-top: 40px;
 }
 
 .about__skill div {
@@ -296,6 +295,7 @@ a {
   line-height: 22px;
   letter-spacing: -0.03em;
   text-align: left;
+  
 }
 
 .about__skill span {
@@ -327,6 +327,13 @@ a {
 .mail p:nth-child(2) {
   flex: 2;
   text-align: center;
+  letter-spacing: 1px;
+}
+
+.about__myself {
+  border-bottom: 1.5px solid var(--main-gray);
+  overflow: hidden;
+  padding-bottom: 24px;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -361,13 +368,14 @@ a {
 
 @media (max-width: 767px) {
   .wrapper {
-    padding: 30px;
+    padding: 16px 30px;
   }
 
   .about__me {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
   }
 
   .about__me h1 {
@@ -378,6 +386,8 @@ a {
   .about__me p {
     width: 100%;
     text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
   }
 
   .navigation {
@@ -388,6 +398,7 @@ a {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    gap: 0;
   }
 
   .navigation ul li {
@@ -396,6 +407,7 @@ a {
 
   .about__project h2 {
     font-size: 30px;
+    margin: 40px 0;
   }
 
   .about__project__info p {
@@ -408,6 +420,7 @@ a {
     font-size: 18px;
     width: 100%;
     padding: 0;
+    margin-bottom: 20px;
   }
 
   .about__project__info span {
@@ -423,7 +436,7 @@ a {
 
   .footer {
     display: block;
-    margin-top: 70px;
+    margin: 0;
   }
 
   .footer__logo {
@@ -433,23 +446,29 @@ a {
 
   .about__work {
     display: block;
-    margin: 50px 0;
+    margin: 0;
   }
 
   .my__image {
-    margin-top: 40px;
+    margin-top: 12px;
     width: 100%;
   }
 
   .contact input {
     width: 100%;
     margin: 20px 0;
-    padding: 14px;
+    margin: 8px 0;
     font-family: DM Sans;
   }
 
   .contact {
     max-width: 100%;
+    padding: 40px 10px;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+
   }
 
   .submit {
@@ -468,20 +487,36 @@ a {
   }
 
   .me__info h1 {
-
+    line-height: inherit;
     font-size: 35px;
   }
 
   .me__info p {
     font-size: 24px;
     margin-bottom: 20px;
-  }.mail{
+    margin-top: 0px;
+  }
+
+  .mail {
     display: block;
   }
-  .mail p:nth-child(2){
-    font-size: 24px;
+
+  .mail p:nth-child(2) {
+    font-size: 20px;
   }
-  .mail p:nth-child(1){
-    font-size: 38px;
+
+  .mail p:nth-child(1) {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  .about__skill {
+    margin-top: 50px;
+  }
+  .about__skill div {
+    gap: 0;
+  }
+  .about__skill h2{
+    min-width: 117px;
   }
 }
